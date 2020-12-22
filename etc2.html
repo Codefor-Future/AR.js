@@ -23,6 +23,8 @@
       id="scene"
     >
       <a-assets>
+        <a-asset-item id="earthObj" src="./models/Earth.obj"></a-asset-item>
+        <a-asset-item id="earthMtl" src="./models/Earth.mtl"></a-asset-item>
         <a-asset-item
           id="bowser"
           src="https://cdn.glitch.com/06bd98b4-97ee-4c07-a546-fe39ca205034%2Fbowser.glb"
@@ -39,7 +41,7 @@
       >
         <a-entity
           id="bowser-model"
-          gltf-model="#bowser"
+          obj-model="obj: #earthObj; mtl: #earthMtl"
           position="0 0 0"
           scale="0.05 0.05 0.05"
           class="clickable"
