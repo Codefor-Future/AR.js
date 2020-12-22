@@ -32,25 +32,16 @@
         </a-asset-item>
       </a-assets>
 
-      <!-- <a-marker
-        preset="hiro"
+      <a-ntf
+      type="nft"
+      url="./AR.js/desc/book"
+        
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
         id="markerA"
-      > -->
-      <a-nft
-      raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-        id="markerA"
-      type="nft"
-      url="./AR.js/desc/book"
-      smooth="true"
-      smoothCount="10"
-      smoothTolerance=".01"
-      smoothThreshold="5"
-    >
+      >
+      
         <a-entity
           id="bowser-model"
           obj-model="obj: #earthObj; mtl: #earthMtl"
@@ -60,8 +51,7 @@
           gesture-handler
         >
         </a-entity>
-        </a-nft>
-      <!-- </a-marker> -->
+      </a-ntf>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
