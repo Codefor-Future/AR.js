@@ -37,6 +37,10 @@
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
+  <a-assets>
+    <a-asset-item id="earthObj" src="./AR.js/models/Earth.obj"></a-asset-item>
+    <a-asset-item id="earthMtl" src="./AR.js/models/Earth.mtl"></a-asset-item>
+  </a-assets>
     <!-- a-nft is the anchor that defines an Image Tracking entity -->
     <!-- on 'url' use the path to the Image Descriptors created before. -->
     <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
@@ -55,9 +59,7 @@
         position="50 150 0"
       >
       </a-entity> -->
-      <a-entity obj-model=”obj: url(./AR.js/models/Earth.obj); 
-            mtl: url(./AR.js/models/Earth.mtl)”>
-      </a-entity>
+      <a-entity obj-model="obj: #earthObj; mtl: #earthMtl"></a-entity>
         <!-- <a-box position='0 1 0' material='color: blue;'>
         </a-box> -->
     </a-nft>
