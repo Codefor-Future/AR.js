@@ -6,11 +6,25 @@
 <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
 </head>
 <body>
-<!-- <a-scene id="scene">
-    <a-assets>
+<a-scene id="scene">
+    <a-assets timeout="10000">
         
+        <!-- <a-asset-item
+            id="glbtestmodel"
+            src="./models/Earth.fbx"
+        ></a-asset-item
+            > -->
     </a-assets>
-</a-scene> -->
-<h2 id="test">hi</h2>
+    <a-entity id="box" rotation="30 30 30" scale="2 2 2" geometry="primitive: box" position="0 30 -40" material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
+        
+  </a-entity>
+    <!-- <a-entity 
+          id="glbtest"
+          fbx-model="#glbtestmodel"
+          position="0 1 2">
+    </a-entity> -->
+
+</a-scene>
+
 </body>
 </html>
