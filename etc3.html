@@ -8,21 +8,16 @@
 <body>
 <a-scene id="scene">
     <a-assets timeout="10000">
+        <a-asset-item id="earthFbx" src="./models/Earth.glb"></a-asset-item>
+        <a-asset-item id="earthObj" src="./models/Earth.obj"></a-asset-item>
+        <a-asset-item id="earthMtl" src="./models/Earth.mtl"></a-asset-item>
         
-        <!-- <a-asset-item
-            id="glbtestmodel"
-            src="./models/Earth.fbx"
-        ></a-asset-item
-            > -->
     </a-assets>
-    <a-entity id="box" rotation="400 390 78" scale="2 2 2" geometry="primitive: box" position="10 30 -40" material="color: magenta; metalness:1; roughness: 0.1; sphericalEnvMap: #sky;">
-        
-  </a-entity>
-    <!-- <a-entity 
-          id="glbtest"
-          fbx-model="#glbtestmodel"
-          position="0 1 2">
-    </a-entity> -->
+    <a-entity obj-model="obj: #earthObj; mtl: #earthMtl"
+        scale=".2 .2 .2"
+          position="10 220 -300"
+    ></a-entity>
+    
 
 </a-scene>
 
