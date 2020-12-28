@@ -1,4 +1,4 @@
 window.addEventListener("deviceorientation", handleOrientation, true);
 function handleOrientation(e){
-    document.getElementById('box').setAttribute('rotation',e.alpha+" "+e.beta+" "+e.gamma)
+    document.getElementById('box').setAttribute('rotation',e.alpha+" "+"30 20")
 }
