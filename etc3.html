@@ -13,7 +13,7 @@
 >
     <a-assets timeout="2000000">
         <img src="./models/Earth.png" id="imgTest" alt="">
-        <a-asset-item id="girl" src="./models/test.gltf"></a-asset-item>
+        <!-- <a-asset-item id="girl" src="./models/test.gltf"></a-asset-item> -->
     </a-assets>
 
     <a-nft
@@ -24,11 +24,11 @@
         smoothTolerance=".01"
         smoothThreshold="5"
     >
-        <a-entity gltf-model="#girl"
+        <!-- <a-entity gltf-model="#girl"
             scale=".01 .01 .01"
             position="1 2 0"
-        ></a-entity>
-        <!-- <a-image width="200" height="200" position="0 -200 -300" src="#imgTest"></a-image> -->
+        ></a-entity> -->
+        <a-image width="200" height="200" position="0 0 0" scale=".5 .5 .5" src="#imgTest"></a-image>
     </a-nft>
     <!-- <a-marker-camera preset='hiro'></a-marker-camera> -->
     <a-entity camera></a-entity>
